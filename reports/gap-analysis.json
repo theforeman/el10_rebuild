@@ -1,0 +1,1718 @@
+{
+  "repos_analyzed": [
+    {
+      "name": "foreman-packaging",
+      "path": "foreman-packaging",
+      "spec_count": 586,
+      "package_count": 1046
+    },
+    {
+      "name": "pulpcore-packaging",
+      "path": "pulpcore-packaging",
+      "spec_count": 283,
+      "package_count": 321
+    }
+  ],
+  "el10_repos": [
+    "BaseOS",
+    "AppStream",
+    "CRB"
+  ],
+  "total_specs": 869,
+  "total_packages": 1367,
+  "total_requires": 2484,
+  "total_build_requires": 2716,
+  "satisfied_requires": 2394,
+  "satisfied_build_requires": 2665,
+  "missing": [
+    {
+      "name": "libopenscap.so.25()(64bit)",
+      "dep_type": "Requires",
+      "is_virtual": true,
+      "required_by": [
+        {
+          "package": "rubygem-openscap",
+          "source_repo": "foreman-packaging",
+          "version_constraint": null
+        }
+      ]
+    },
+    {
+      "name": "python2-tracer",
+      "dep_type": "Requires",
+      "is_virtual": false,
+      "required_by": [
+        {
+          "package": "katello-host-tools-tracer",
+          "source_repo": "foreman-packaging",
+          "version_constraint": ">= 0.6.12"
+        }
+      ]
+    },
+    {
+      "name": "satellite-lifecycle",
+      "dep_type": "Requires",
+      "is_virtual": false,
+      "required_by": [
+        {
+          "package": "rubygem-foreman_theme_satellite",
+          "source_repo": "foreman-packaging",
+          "version_constraint": null
+        }
+      ]
+    },
+    {
+      "name": "zchunk",
+      "dep_type": "BuildRequires",
+      "is_virtual": false,
+      "required_by": [
+        {
+          "package": "createrepo_c",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        }
+      ]
+    },
+    {
+      "name": "python3.11-dynaconf",
+      "dep_type": "Requires",
+      "is_virtual": false,
+      "required_by": [
+        {
+          "package": "python3.11-galaxy-ng",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": ">= 3.1.7"
+        }
+      ]
+    },
+    {
+      "name": "salt-master",
+      "dep_type": "Requires",
+      "is_virtual": false,
+      "required_by": [
+        {
+          "package": "rubygem-smart_proxy_salt",
+          "source_repo": "foreman-packaging",
+          "version_constraint": null
+        }
+      ]
+    },
+    {
+      "name": "python2-devel",
+      "dep_type": "BuildRequires",
+      "is_virtual": false,
+      "required_by": [
+        {
+          "package": "katello-host-tools",
+          "source_repo": "foreman-packaging",
+          "version_constraint": null
+        },
+        {
+          "package": "python2-libcomps",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        }
+      ]
+    },
+    {
+      "name": "python3.11-wheel",
+      "dep_type": "BuildRequires",
+      "is_virtual": false,
+      "required_by": [
+        {
+          "package": "python-galaxy-ng",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        }
+      ]
+    },
+    {
+      "name": "python3.11-idna",
+      "dep_type": "Requires",
+      "is_virtual": false,
+      "required_by": [
+        {
+          "package": "python3.11-idna-ssl",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": ">= 2.0"
+        }
+      ]
+    },
+    {
+      "name": "python3.11-django-automated-logging",
+      "dep_type": "Requires",
+      "is_virtual": false,
+      "required_by": [
+        {
+          "package": "python3.11-galaxy-ng",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": "= 6.1.3"
+        }
+      ]
+    },
+    {
+      "name": "python3.12-opentelemetry_proto == 1.40.0",
+      "dep_type": "Requires",
+      "is_virtual": false,
+      "required_by": [
+        {
+          "package": "python3.12-opentelemetry_exporter_otlp_proto_common",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        }
+      ]
+    },
+    {
+      "name": "candlepin",
+      "dep_type": "Requires",
+      "is_virtual": false,
+      "required_by": [
+        {
+          "package": "katello",
+          "source_repo": "foreman-packaging",
+          "version_constraint": ">= 2.0"
+        }
+      ]
+    },
+    {
+      "name": "libsass.so.1()(64bit)",
+      "dep_type": "Requires",
+      "is_virtual": true,
+      "required_by": [
+        {
+          "package": "rubygem-sassc",
+          "source_repo": "foreman-packaging",
+          "version_constraint": null
+        },
+        {
+          "package": "rubygem-sassc",
+          "source_repo": "foreman-packaging",
+          "version_constraint": null
+        }
+      ]
+    },
+    {
+      "name": "python3.12-pulp-glue == 0.39.1",
+      "dep_type": "Requires",
+      "is_virtual": false,
+      "required_by": [
+        {
+          "package": "python3.12-pulp-cli",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        }
+      ]
+    },
+    {
+      "name": "python3.11-requests",
+      "dep_type": "Requires",
+      "is_virtual": false,
+      "required_by": [
+        {
+          "package": "ansible-collection-theforeman-foreman",
+          "source_repo": "foreman-packaging",
+          "version_constraint": null
+        },
+        {
+          "package": "ansible-collection-redhat-satellite",
+          "source_repo": "foreman-packaging",
+          "version_constraint": null
+        },
+        {
+          "package": "python3.11-pyjwkest",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        }
+      ]
+    },
+    {
+      "name": "python3.12-pulp-glue-deb == 0.4.4",
+      "dep_type": "Requires",
+      "is_virtual": false,
+      "required_by": [
+        {
+          "package": "python3.12-pulp-cli-deb",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        }
+      ]
+    },
+    {
+      "name": "python3.12-sigstore-models == 0.0.6",
+      "dep_type": "Requires",
+      "is_virtual": false,
+      "required_by": [
+        {
+          "package": "python3.12-sigstore",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        }
+      ]
+    },
+    {
+      "name": "ruby(abi)",
+      "dep_type": "Requires",
+      "is_virtual": true,
+      "required_by": [
+        {
+          "package": "rubygem-bundler_ext",
+          "source_repo": "foreman-packaging",
+          "version_constraint": null
+        },
+        {
+          "package": "rubygem-bundler_ext",
+          "source_repo": "foreman-packaging",
+          "version_constraint": null
+        },
+        {
+          "package": "rubygem-concurrent-ruby-edge",
+          "source_repo": "foreman-packaging",
+          "version_constraint": null
+        },
+        {
+          "package": "rubygem-concurrent-ruby-edge",
+          "source_repo": "foreman-packaging",
+          "version_constraint": null
+        }
+      ]
+    },
+    {
+      "name": "foreman_theme_satellite_assets",
+      "dep_type": "BuildRequires",
+      "is_virtual": false,
+      "required_by": [
+        {
+          "package": "rubygem-foreman_theme_satellite",
+          "source_repo": "foreman-packaging",
+          "version_constraint": null
+        }
+      ]
+    },
+    {
+      "name": "rh-python38-python-devel",
+      "dep_type": "BuildRequires",
+      "is_virtual": false,
+      "required_by": [
+        {
+          "package": "%scl_name",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        },
+        {
+          "package": "%scl_name-python3-devel",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        }
+      ]
+    },
+    {
+      "name": "rh-python38-runtime",
+      "dep_type": "Requires",
+      "is_virtual": false,
+      "required_by": [
+        {
+          "package": "%scl_name-runtime",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        }
+      ]
+    },
+    {
+      "name": "(puppet-agent >= 7 with puppet-agent < 9)",
+      "dep_type": "Requires",
+      "is_virtual": true,
+      "required_by": [
+        {
+          "package": "puppetlabs-stdlib",
+          "source_repo": "foreman-packaging",
+          "version_constraint": null
+        }
+      ]
+    },
+    {
+      "name": "candlepin-selinux",
+      "dep_type": "Requires",
+      "is_virtual": false,
+      "required_by": [
+        {
+          "package": "katello",
+          "source_repo": "foreman-packaging",
+          "version_constraint": ">= 2.0"
+        },
+        {
+          "package": "katello-selinux",
+          "source_repo": "foreman-packaging",
+          "version_constraint": ">= 3.1.10"
+        }
+      ]
+    },
+    {
+      "name": "rh-python38-python-test",
+      "dep_type": "Requires",
+      "is_virtual": false,
+      "required_by": [
+        {
+          "package": "%scl_name-python3-test",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        }
+      ]
+    },
+    {
+      "name": "rh-python38-python-wheel",
+      "dep_type": "Requires",
+      "is_virtual": false,
+      "required_by": [
+        {
+          "package": "%scl_name-python3-wheel",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        }
+      ]
+    },
+    {
+      "name": "python3.11-pyyaml",
+      "dep_type": "Requires",
+      "is_virtual": false,
+      "required_by": [
+        {
+          "package": "ansible-collection-theforeman-foreman",
+          "source_repo": "foreman-packaging",
+          "version_constraint": null
+        },
+        {
+          "package": "ansible-collection-redhat-satellite",
+          "source_repo": "foreman-packaging",
+          "version_constraint": null
+        }
+      ]
+    },
+    {
+      "name": "python3.11-django-prometheus",
+      "dep_type": "Requires",
+      "is_virtual": false,
+      "required_by": [
+        {
+          "package": "python3.11-galaxy-ng",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": ">= 2.0.0"
+        }
+      ]
+    },
+    {
+      "name": "python3.11-social-auth-app-django",
+      "dep_type": "Requires",
+      "is_virtual": false,
+      "required_by": [
+        {
+          "package": "python3.11-galaxy-ng",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": "< 4.0.0"
+        },
+        {
+          "package": "python3.11-galaxy-ng",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": ">= 3.1.0"
+        }
+      ]
+    },
+    {
+      "name": "python3.11-social-auth-core",
+      "dep_type": "Requires",
+      "is_virtual": false,
+      "required_by": [
+        {
+          "package": "python3.11-galaxy-ng",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": "< 4.0.0"
+        },
+        {
+          "package": "python3.11-galaxy-ng",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": ">= 3.3.1"
+        }
+      ]
+    },
+    {
+      "name": "python3.11-setuptools",
+      "dep_type": "BuildRequires",
+      "is_virtual": false,
+      "required_by": [
+        {
+          "package": "python-click-shell",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        },
+        {
+          "package": "python-colorama",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        },
+        {
+          "package": "python-commonmark",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        },
+        {
+          "package": "python3.11-commonmark",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        },
+        {
+          "package": "python-contextlib2",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        },
+        {
+          "package": "python-dataclasses",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        },
+        {
+          "package": "python-ecdsa",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        },
+        {
+          "package": "python-future",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        },
+        {
+          "package": "python3.11-future",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        },
+        {
+          "package": "python-galaxy-ng",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        },
+        {
+          "package": "python3.11-galaxy-ng",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        },
+        {
+          "package": "python-idna-ssl",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        },
+        {
+          "package": "python-lxml",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        },
+        {
+          "package": "python-pycryptodomex",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        },
+        {
+          "package": "python-pyjwkest",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        },
+        {
+          "package": "python-toml",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        },
+        {
+          "package": "python-types-cryptography",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        }
+      ]
+    },
+    {
+      "name": "python3.11-click",
+      "dep_type": "Requires",
+      "is_virtual": false,
+      "required_by": [
+        {
+          "package": "python3.11-click-shell",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": ">= 6"
+        }
+      ]
+    },
+    {
+      "name": "openvox-agent",
+      "dep_type": "Requires",
+      "is_virtual": false,
+      "required_by": [
+        {
+          "package": "foreman-installer",
+          "source_repo": "foreman-packaging",
+          "version_constraint": ">= 8.23.1"
+        },
+        {
+          "package": "foreman-installer",
+          "source_repo": "foreman-packaging",
+          "version_constraint": ">= 8.23.1"
+        },
+        {
+          "package": "puppet-agent-oauth",
+          "source_repo": "foreman-packaging",
+          "version_constraint": null
+        },
+        {
+          "package": "puppet-agent-puppet-strings",
+          "source_repo": "foreman-packaging",
+          "version_constraint": ">= 7"
+        },
+        {
+          "package": "puppet-agent-rgen",
+          "source_repo": "foreman-packaging",
+          "version_constraint": null
+        },
+        {
+          "package": "puppet-agent-yard",
+          "source_repo": "foreman-packaging",
+          "version_constraint": null
+        }
+      ]
+    },
+    {
+      "name": "libopenscap.so.25",
+      "dep_type": "Requires",
+      "is_virtual": false,
+      "required_by": [
+        {
+          "package": "rubygem-openscap",
+          "source_repo": "foreman-packaging",
+          "version_constraint": null
+        }
+      ]
+    },
+    {
+      "name": "rh-python38-python-setuptools",
+      "dep_type": "Requires",
+      "is_virtual": false,
+      "required_by": [
+        {
+          "package": "%scl_name-python3-setuptools",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        }
+      ]
+    },
+    {
+      "name": "python3.12-sigstore-rekor-types == 0.0.18",
+      "dep_type": "Requires",
+      "is_virtual": false,
+      "required_by": [
+        {
+          "package": "python3.12-sigstore",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        }
+      ]
+    },
+    {
+      "name": "python3.11-galaxy-importer",
+      "dep_type": "Requires",
+      "is_virtual": false,
+      "required_by": [
+        {
+          "package": "python3.11-galaxy-ng",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": "= 0.4.5"
+        }
+      ]
+    },
+    {
+      "name": "python3.12-opentelemetry_api == 1.40.0",
+      "dep_type": "Requires",
+      "is_virtual": false,
+      "required_by": [
+        {
+          "package": "python3.12-opentelemetry_sdk",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        }
+      ]
+    },
+    {
+      "name": "puppet-agent",
+      "dep_type": "Requires",
+      "is_virtual": false,
+      "required_by": [
+        {
+          "package": "puppet-foreman_scap_client",
+          "source_repo": "foreman-packaging",
+          "version_constraint": ">= 7"
+        }
+      ]
+    },
+    {
+      "name": "python3.11-devel",
+      "dep_type": "BuildRequires",
+      "is_virtual": false,
+      "required_by": [
+        {
+          "package": "python-click-shell",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        },
+        {
+          "package": "python-colorama",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        },
+        {
+          "package": "python-commonmark",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        },
+        {
+          "package": "python-contextlib2",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        },
+        {
+          "package": "python-dataclasses",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        },
+        {
+          "package": "python-ecdsa",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        },
+        {
+          "package": "python-future",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        },
+        {
+          "package": "python-galaxy-ng",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        },
+        {
+          "package": "python-idna-ssl",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        },
+        {
+          "package": "python-lxml",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        },
+        {
+          "package": "python-pycryptodomex",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        },
+        {
+          "package": "python-pyjwkest",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        },
+        {
+          "package": "python-toml",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        },
+        {
+          "package": "python-types-cryptography",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        }
+      ]
+    },
+    {
+      "name": "drpm-devel",
+      "dep_type": "BuildRequires",
+      "is_virtual": false,
+      "required_by": [
+        {
+          "package": "createrepo_c",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": ">= 0.4.0"
+        }
+      ]
+    },
+    {
+      "name": "python3.11-drf-spectacular",
+      "dep_type": "Requires",
+      "is_virtual": false,
+      "required_by": [
+        {
+          "package": "python3.11-galaxy-ng",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        }
+      ]
+    },
+    {
+      "name": "python3.11-pulpcore",
+      "dep_type": "Requires",
+      "is_virtual": false,
+      "required_by": [
+        {
+          "package": "python3.11-galaxy-ng",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": "< 3.19.0"
+        },
+        {
+          "package": "python3.11-galaxy-ng",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": ">= 3.18.6"
+        }
+      ]
+    },
+    {
+      "name": "python3.12-poetry_core == 2.4.0",
+      "dep_type": "Requires",
+      "is_virtual": false,
+      "required_by": [
+        {
+          "package": "python3.12-poetry",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        }
+      ]
+    },
+    {
+      "name": "python3.11-pulp-ansible",
+      "dep_type": "Requires",
+      "is_virtual": false,
+      "required_by": [
+        {
+          "package": "python3.11-galaxy-ng",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": "< 1:0.14.0"
+        },
+        {
+          "package": "python3.11-galaxy-ng",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": ">= 1:0.13.2"
+        }
+      ]
+    },
+    {
+      "name": "python3.12-pypi-attestations == 0.0.28",
+      "dep_type": "Requires",
+      "is_virtual": false,
+      "required_by": [
+        {
+          "package": "python3.12-pulp-python",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        }
+      ]
+    },
+    {
+      "name": "python3.11-six",
+      "dep_type": "Requires",
+      "is_virtual": false,
+      "required_by": [
+        {
+          "package": "python3.11-pyjwkest",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        }
+      ]
+    },
+    {
+      "name": "rh-python38",
+      "dep_type": "Requires",
+      "is_virtual": false,
+      "required_by": [
+        {
+          "package": "%scl_name",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        }
+      ]
+    },
+    {
+      "name": "pkgconfig(zck)",
+      "dep_type": "BuildRequires",
+      "is_virtual": true,
+      "required_by": [
+        {
+          "package": "createrepo_c",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": ">= 0.9.11"
+        }
+      ]
+    },
+    {
+      "name": "python3.11-django-auth-ldap",
+      "dep_type": "Requires",
+      "is_virtual": false,
+      "required_by": [
+        {
+          "package": "python3.11-galaxy-ng",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": "= 4.0.0"
+        }
+      ]
+    },
+    {
+      "name": "rh-python38-scldevel",
+      "dep_type": "BuildRequires",
+      "is_virtual": false,
+      "required_by": [
+        {
+          "package": "%scl_name",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        },
+        {
+          "package": "%scl_name-build",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        },
+        {
+          "package": "%scl_name-scldevel",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        }
+      ]
+    },
+    {
+      "name": "python3.12-rpm-macros",
+      "dep_type": "BuildRequires",
+      "is_virtual": false,
+      "required_by": [
+        {
+          "package": "ansible-core",
+          "source_repo": "foreman-packaging",
+          "version_constraint": null
+        },
+        {
+          "package": "ansible-runner",
+          "source_repo": "foreman-packaging",
+          "version_constraint": null
+        },
+        {
+          "package": "python-jinja2",
+          "source_repo": "foreman-packaging",
+          "version_constraint": null
+        },
+        {
+          "package": "python-resolvelib",
+          "source_repo": "foreman-packaging",
+          "version_constraint": null
+        },
+        {
+          "package": "python-setuptools-scm",
+          "source_repo": "foreman-packaging",
+          "version_constraint": null
+        },
+        {
+          "package": "pyproject-rpm-macros",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        },
+        {
+          "package": "pyproject-rpm-macros",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        }
+      ]
+    },
+    {
+      "name": "python3.11-pulp-container",
+      "dep_type": "Requires",
+      "is_virtual": false,
+      "required_by": [
+        {
+          "package": "python3.11-galaxy-ng",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": "< 2.11.0"
+        },
+        {
+          "package": "python3.11-galaxy-ng",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": ">= 2.10.7"
+        }
+      ]
+    },
+    {
+      "name": "python3.12-pydantic-core == 2.46.4",
+      "dep_type": "Requires",
+      "is_virtual": false,
+      "required_by": [
+        {
+          "package": "python3.12-pydantic",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": null
+        }
+      ]
+    }
+  ],
+  "version_mismatches": [
+    {
+      "dep_name": "python3.12-cryptography",
+      "available_version": "49.0.0",
+      "available_source": "BaseOS",
+      "required_by": [
+        {
+          "package": "python3.12-pulpcore",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": "< 47.0"
+        },
+        {
+          "package": "python3.12-pyOpenSSL",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": "< 47"
+        },
+        {
+          "package": "python3.12-sigstore",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": "< 49"
+        }
+      ]
+    },
+    {
+      "dep_name": "ruby",
+      "available_version": "3.3.10",
+      "available_source": "AppStream",
+      "required_by": [
+        {
+          "package": "rubygem-katello",
+          "source_repo": "foreman-packaging",
+          "version_constraint": "< 3.1"
+        },
+        {
+          "package": "rubygem-katello",
+          "source_repo": "foreman-packaging",
+          "version_constraint": "< 3.1"
+        }
+      ]
+    },
+    {
+      "dep_name": "python3.12-createrepo_c",
+      "available_version": "1.1.2",
+      "available_source": "AppStream",
+      "required_by": [
+        {
+          "package": "python3.12-pulp-rpm",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": ">= 1.2.1"
+        }
+      ]
+    },
+    {
+      "dep_name": "libcomps",
+      "available_version": "0.1.21",
+      "available_source": "BaseOS",
+      "required_by": [
+        {
+          "package": "libcomps-devel",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": "= 0.1.23-1.el10"
+        },
+        {
+          "package": "%{scl}-python3.12-libcomps",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": "= 0.1.23-1.el10"
+        }
+      ]
+    },
+    {
+      "dep_name": "rubygem-pg",
+      "available_version": "1.5.4",
+      "available_source": "AppStream",
+      "required_by": [
+        {
+          "package": "rubygem-pg-doc",
+          "source_repo": "foreman-packaging",
+          "version_constraint": "= 1.6.3-2.el10"
+        }
+      ]
+    },
+    {
+      "dep_name": "python3.12-libcomps",
+      "available_version": "0.1.21",
+      "available_source": "BaseOS",
+      "required_by": [
+        {
+          "package": "python3.12-pulp-rpm",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": ">= 0.1.23"
+        }
+      ]
+    },
+    {
+      "dep_name": "python3.12-requests",
+      "available_version": "2.32.4",
+      "available_source": "BaseOS",
+      "required_by": [
+        {
+          "package": "python3.12-google-api-core",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": ">= 2.33.0"
+        }
+      ]
+    },
+    {
+      "dep_name": "python3.12-setuptools-rust",
+      "available_version": "1.10.2",
+      "available_source": "CRB",
+      "required_by": [
+        {
+          "package": "python3.12-maturin",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": ">= 1.11.0"
+        }
+      ]
+    },
+    {
+      "dep_name": "ansible-core",
+      "available_version": "2.16.19",
+      "available_source": "AppStream",
+      "required_by": [
+        {
+          "package": "ansible-test",
+          "source_repo": "foreman-packaging",
+          "version_constraint": "= 1:2.16.14-3.el10"
+        }
+      ]
+    },
+    {
+      "dep_name": "python3.12-typing-extensions",
+      "available_version": "4.9.0",
+      "available_source": "BaseOS",
+      "required_by": [
+        {
+          "package": "python3.12-pydantic",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": ">= 4.14.1"
+        },
+        {
+          "package": "python3.12-pydantic-core",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": ">= 4.14.1"
+        },
+        {
+          "package": "python3.12-pydantic-core",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": ">= 4.14.1"
+        },
+        {
+          "package": "python3.12-sigstore-models",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": ">= 4.14.1"
+        },
+        {
+          "package": "python3.12-typing-inspection",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": ">= 4.12.2"
+        }
+      ]
+    },
+    {
+      "dep_name": "python3.12-attrs",
+      "available_version": "23.2.0",
+      "available_source": "BaseOS",
+      "required_by": [
+        {
+          "package": "python3.12-galaxy-importer",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": "< 23"
+        }
+      ]
+    },
+    {
+      "dep_name": "python3.12-protobuf",
+      "available_version": "3.19.6",
+      "available_source": "AppStream",
+      "required_by": [
+        {
+          "package": "python3.12-google-api-core",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": ">= 5.29.6"
+        },
+        {
+          "package": "python3.12-opentelemetry_proto",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": ">= 5"
+        },
+        {
+          "package": "python3.12-pulpcore",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": ">= 4.21.1"
+        }
+      ]
+    },
+    {
+      "dep_name": "python3.12-installer",
+      "available_version": "0.7.0",
+      "available_source": "CRB",
+      "required_by": [
+        {
+          "package": "python3.12-poetry",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": ">= 1.0.0"
+        }
+      ]
+    },
+    {
+      "dep_name": "python3.12-urllib3",
+      "available_version": "1.26.19",
+      "available_source": "BaseOS",
+      "required_by": [
+        {
+          "package": "python3.12-dulwich",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": ">= 2.2.2"
+        },
+        {
+          "package": "python3.12-id",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": ">= 2"
+        }
+      ]
+    },
+    {
+      "dep_name": "python3.12-pathspec",
+      "available_version": "0.12.1",
+      "available_source": "CRB",
+      "required_by": [
+        {
+          "package": "python3.12-yamllint",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": ">= 1.0.0"
+        }
+      ]
+    },
+    {
+      "dep_name": "python3.12-cffi",
+      "available_version": "1.16.0",
+      "available_source": "BaseOS",
+      "required_by": [
+        {
+          "package": "python3.12-cryptography",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": ">= 2.0.0"
+        },
+        {
+          "package": "python3.12-cryptography",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": ">= 2.0.0"
+        }
+      ]
+    },
+    {
+      "dep_name": "createrepo_c-libs",
+      "available_version": "1.1.2",
+      "available_source": "AppStream",
+      "required_by": [
+        {
+          "package": "createrepo_c",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": "= 1.2.1-2.el10"
+        },
+        {
+          "package": "createrepo_c-devel",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": "= 1.2.1-2.el10"
+        },
+        {
+          "package": "python3.12-createrepo_c",
+          "source_repo": "pulpcore-packaging",
+          "version_constraint": "= 1.2.1-2.el10"
+        }
+      ]
+    }
+  ],
+  "runtime_matrix": [
+    {
+      "name": "Ruby",
+      "el10_version": "3.3.10",
+      "el10_source": "AppStream",
+      "required_versions": [
+        "< 3.1",
+        "< 3.4",
+        "< 4",
+        "< 4.0",
+        "< 5",
+        "> 1.9.3",
+        ">= 1.8.1",
+        ">= 1.8.7",
+        ">= 1.9.0",
+        ">= 1.9.1",
+        ">= 1.9.2",
+        ">= 1.9.3",
+        ">= 2.0",
+        ">= 2.0.0",
+        ">= 2.1",
+        ">= 2.1.0",
+        ">= 2.2",
+        ">= 2.2.0",
+        ">= 2.3",
+        ">= 2.3.0",
+        ">= 2.4",
+        ">= 2.4.0",
+        ">= 2.4.1",
+        ">= 2.5",
+        ">= 2.5.0",
+        ">= 2.6",
+        ">= 2.6.0",
+        ">= 2.6.7",
+        ">= 2.7",
+        ">= 2.7.0",
+        ">= 3.0",
+        ">= 3.0.0"
+      ]
+    },
+    {
+      "name": "Python",
+      "el10_version": "3.12.13",
+      "el10_source": "BaseOS",
+      "required_versions": []
+    },
+    {
+      "name": "Node.js",
+      "el10_version": "22.23.1",
+      "el10_source": "AppStream",
+      "required_versions": [
+        ">= 22"
+      ]
+    },
+    {
+      "name": "PostgreSQL",
+      "el10_version": "16.14",
+      "el10_source": "AppStream",
+      "required_versions": []
+    },
+    {
+      "name": "Rails",
+      "el10_version": "7.0.10",
+      "el10_source": "foreman-packaging",
+      "required_versions": [
+        "< 7.1.0",
+        "= 7.0.10-1.el10",
+        ">= 7.0.3"
+      ]
+    },
+    {
+      "name": "Django",
+      "el10_version": "4.2.30",
+      "el10_source": "pulpcore-packaging",
+      "required_versions": [
+        "< 5.0.0",
+        "< 5.3",
+        ">= 2.0",
+        ">= 2.2",
+        ">= 3.0",
+        ">= 3.1.1",
+        ">= 3.2",
+        ">= 4.2",
+        ">= 4.2.24"
+      ]
+    },
+    {
+      "name": "Ansible",
+      "el10_version": "2.16.19",
+      "el10_source": "AppStream",
+      "required_versions": [
+        "= 1:2.16.14-3.el10",
+        ">= 1:2.16.14-3"
+      ]
+    },
+    {
+      "name": "Puppet/OpenVox",
+      "el10_version": null,
+      "el10_source": null,
+      "required_versions": [
+        ">= 7",
+        ">= 8.0.0",
+        ">= 8.23.1"
+      ]
+    },
+    {
+      "name": "systemd",
+      "el10_version": "257",
+      "el10_source": "BaseOS",
+      "required_versions": []
+    },
+    {
+      "name": "OpenSSL",
+      "el10_version": "3.5.7",
+      "el10_source": "BaseOS",
+      "required_versions": []
+    }
+  ],
+  "overlapping_packages": [],
+  "unresolved_macros": [
+    {
+      "raw": "python%{python3_pkgversion}-devel",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/client/python-psutil/python-psutil.spec",
+      "package": "python-psutil"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/foreman/rubygem-ansi/rubygem-ansi.spec",
+      "package": "rubygem-ansi-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/foreman/rubygem-bootstrap-sass/rubygem-bootstrap-sass.spec",
+      "package": "rubygem-bootstrap-sass-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/foreman/rubygem-bundler_ext/rubygem-bundler_ext.spec",
+      "package": "rubygem-bundler_ext-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/foreman/rubygem-concurrent-ruby-edge/rubygem-concurrent-ruby-edge.spec",
+      "package": "rubygem-concurrent-ruby-edge-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/foreman/rubygem-deacon/rubygem-deacon.spec",
+      "package": "rubygem-deacon-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/foreman/rubygem-httpclient/rubygem-httpclient.spec",
+      "package": "rubygem-httpclient-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/foreman/rubygem-jquery-ui-rails/rubygem-jquery-ui-rails.spec",
+      "package": "rubygem-jquery-ui-rails-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/foreman/rubygem-kafo_parsers/rubygem-kafo_parsers.spec",
+      "package": "rubygem-kafo_parsers-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/foreman/rubygem-little-plugger/rubygem-little-plugger.spec",
+      "package": "rubygem-little-plugger-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/foreman/rubygem-net_http_unix/rubygem-net_http_unix.spec",
+      "package": "rubygem-net_http_unix-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/foreman/rubygem-netrc/rubygem-netrc.spec",
+      "package": "rubygem-netrc-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/foreman/rubygem-powerbar/rubygem-powerbar.spec",
+      "package": "rubygem-powerbar-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/foreman/rubygem-promise.rb/rubygem-promise.rb.spec",
+      "package": "rubygem-promise.rb-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/foreman/rubygem-rack-jsonp/rubygem-rack-jsonp.spec",
+      "package": "rubygem-rack-jsonp-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/foreman/rubygem-redis/rubygem-redis.spec",
+      "package": "rubygem-redis-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/foreman/rubygem-retriable/rubygem-retriable.spec",
+      "package": "rubygem-retriable-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/foreman/rubygem-rsec/rubygem-rsec.spec",
+      "package": "rubygem-rsec-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/foreman/rubygem-sass-rails/rubygem-sass-rails.spec",
+      "package": "rubygem-sass-rails-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/foreman/rubygem-sassc-rails/rubygem-sassc-rails.spec",
+      "package": "rubygem-sassc-rails-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/foreman/rubygem-uber/rubygem-uber.spec",
+      "package": "rubygem-uber-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/foreman/rubygem-websocket-extensions/rubygem-websocket-extensions.spec",
+      "package": "rubygem-websocket-extensions-doc"
+    },
+    {
+      "raw": "python%{python3_version}dist(pexpect)",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/plugins/ansible-runner/ansible-runner.spec",
+      "package": "python3.12-ansible-runner"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/plugins/rubygem-aws-eventstream/rubygem-aws-eventstream.spec",
+      "package": "rubygem-aws-eventstream-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/plugins/rubygem-aws-sigv4/rubygem-aws-sigv4.spec",
+      "package": "rubygem-aws-sigv4-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/plugins/rubygem-azure_mgmt_compute/rubygem-azure_mgmt_compute.spec",
+      "package": "rubygem-azure_mgmt_compute-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/plugins/rubygem-azure_mgmt_network/rubygem-azure_mgmt_network.spec",
+      "package": "rubygem-azure_mgmt_network-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/plugins/rubygem-azure_mgmt_resources/rubygem-azure_mgmt_resources.spec",
+      "package": "rubygem-azure_mgmt_resources-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/plugins/rubygem-azure_mgmt_storage/rubygem-azure_mgmt_storage.spec",
+      "package": "rubygem-azure_mgmt_storage-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/plugins/rubygem-azure_mgmt_subscriptions/rubygem-azure_mgmt_subscriptions.spec",
+      "package": "rubygem-azure_mgmt_subscriptions-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/plugins/rubygem-bcrypt_pbkdf/rubygem-bcrypt_pbkdf.spec",
+      "package": "rubygem-bcrypt_pbkdf-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/plugins/rubygem-chunky_png/rubygem-chunky_png.spec",
+      "package": "rubygem-chunky_png-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/plugins/rubygem-down/rubygem-down.spec",
+      "package": "rubygem-down-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/plugins/rubygem-dry-equalizer/rubygem-dry-equalizer.spec",
+      "package": "rubygem-dry-equalizer-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/plugins/rubygem-dry-inflector/rubygem-dry-inflector.spec",
+      "package": "rubygem-dry-inflector-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/plugins/rubygem-dry-initializer/rubygem-dry-initializer.spec",
+      "package": "rubygem-dry-initializer-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/plugins/rubygem-dry-logic/rubygem-dry-logic.spec",
+      "package": "rubygem-dry-logic-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/plugins/rubygem-dry-types/rubygem-dry-types.spec",
+      "package": "rubygem-dry-types-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/plugins/rubygem-ed25519/rubygem-ed25519.spec",
+      "package": "rubygem-ed25519-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/plugins/rubygem-foreman_datacenter/rubygem-foreman_datacenter.spec",
+      "package": "rubygem-foreman_datacenter-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/plugins/rubygem-foreman_git_templates/rubygem-foreman_git_templates.spec",
+      "package": "rubygem-foreman_git_templates-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/plugins/rubygem-foreman_graphite/rubygem-foreman_graphite.spec",
+      "package": "rubygem-foreman_graphite-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/plugins/rubygem-foreman_host_extra_validator/rubygem-foreman_host_extra_validator.spec",
+      "package": "rubygem-foreman_host_extra_validator-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/plugins/rubygem-foreman_omaha/rubygem-foreman_omaha.spec",
+      "package": "rubygem-foreman_omaha-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/plugins/rubygem-foreman_vmwareannotations/rubygem-foreman_vmwareannotations.spec",
+      "package": "rubygem-foreman_vmwareannotations-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/plugins/rubygem-graphite-api/rubygem-graphite-api.spec",
+      "package": "rubygem-graphite-api-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/plugins/rubygem-http_parser.rb/rubygem-http_parser.rb.spec",
+      "package": "rubygem-http_parser.rb-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/plugins/rubygem-httparty/rubygem-httparty.spec",
+      "package": "rubygem-httparty-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/plugins/rubygem-infoblox/rubygem-infoblox.spec",
+      "package": "rubygem-infoblox-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/plugins/rubygem-interactor/rubygem-interactor.spec",
+      "package": "rubygem-interactor-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/plugins/rubygem-jquery-matchheight-rails/rubygem-jquery-matchheight-rails.spec",
+      "package": "rubygem-jquery-matchheight-rails-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/plugins/rubygem-logify/rubygem-logify.spec",
+      "package": "rubygem-logify-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/plugins/rubygem-mqtt/rubygem-mqtt.spec",
+      "package": "rubygem-mqtt-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/plugins/rubygem-ms_rest/rubygem-ms_rest.spec",
+      "package": "rubygem-ms_rest-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/plugins/rubygem-ms_rest_azure/rubygem-ms_rest_azure.spec",
+      "package": "rubygem-ms_rest_azure-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/plugins/rubygem-multi_xml/rubygem-multi_xml.spec",
+      "package": "rubygem-multi_xml-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/plugins/rubygem-net-ssh-gateway/rubygem-net-ssh-gateway.spec",
+      "package": "rubygem-net-ssh-gateway-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/plugins/rubygem-openscap/rubygem-openscap.spec",
+      "package": "rubygem-openscap-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/plugins/rubygem-openscap_parser/rubygem-openscap_parser.spec",
+      "package": "rubygem-openscap_parser-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/plugins/rubygem-parse-cron/rubygem-parse-cron.spec",
+      "package": "rubygem-parse-cron-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/plugins/rubygem-polyglot/rubygem-polyglot.spec",
+      "package": "rubygem-polyglot-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/plugins/rubygem-rchardet/rubygem-rchardet.spec",
+      "package": "rubygem-rchardet-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/plugins/rubygem-route53/rubygem-route53.spec",
+      "package": "rubygem-route53-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/plugins/rubygem-rprogram/rubygem-rprogram.spec",
+      "package": "rubygem-rprogram-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/plugins/rubygem-rqrcode/rubygem-rqrcode.spec",
+      "package": "rubygem-rqrcode-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/plugins/rubygem-ruby-hmac/rubygem-ruby-hmac.spec",
+      "package": "rubygem-ruby-hmac-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/plugins/rubygem-ruby-nmap/rubygem-ruby-nmap.spec",
+      "package": "rubygem-ruby-nmap-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/plugins/rubygem-timeliness/rubygem-timeliness.spec",
+      "package": "rubygem-timeliness-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/plugins/rubygem-vault/rubygem-vault.spec",
+      "package": "rubygem-vault-doc"
+    },
+    {
+      "raw": "%{pkg_name}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/foreman-packaging/packages/plugins/rubygem-zscheduler/rubygem-zscheduler.spec",
+      "package": "rubygem-zscheduler-doc"
+    },
+    {
+      "raw": "%{scl}-python3.12-devel",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/pulpcore-packaging/packages/libcomps/libcomps.spec",
+      "package": "%{scl}-python3.12-libcomps"
+    },
+    {
+      "raw": "%{scl}-python3.12-setuptools",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/pulpcore-packaging/packages/libcomps/libcomps.spec",
+      "package": "%{scl}-python3.12-libcomps"
+    },
+    {
+      "raw": "%{scl}-python3.12-pip",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/pulpcore-packaging/packages/libcomps/libcomps.spec",
+      "package": "%{scl}-python3.12-libcomps"
+    },
+    {
+      "raw": "%{scl_runtime}",
+      "spec_path": "/home/zhunting/upstream/el10_rebuild/workspace/pulpcore-packaging/packages/tfm-pulpcore/tfm-pulpcore.spec",
+      "package": "%scl_name-build"
+    }
+  ],
+  "parse_warnings": []
+}
